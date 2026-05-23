@@ -65,7 +65,7 @@ export default function HomePage() {
           <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm border-t border-white/10">
             <div className="max-w-7xl mx-auto px-8 py-5 md:px-12 lg:px-16 grid grid-cols-3 gap-4 text-center">
               {[
-                ["500+", "Produk"],
+                ["1.000+", "Produk Terjual"],
                 ["10.000+", "Pelanggan"],
                 ["5 Tahun", "Pengalaman"],
               ].map(([val, label]) => (
