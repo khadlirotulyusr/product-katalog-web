@@ -7,12 +7,14 @@
   --color-accent: #b5803a;
   --color-accent-light: #d4a85a;
   --color-muted: #6b6059;
+  --font-playfair: Georgia, serif;
+  --font-dm-sans: Arial, sans-serif;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 html {

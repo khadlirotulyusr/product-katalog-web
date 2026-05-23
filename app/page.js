@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SafeImage from "@/components/SafeImage";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
@@ -16,21 +16,20 @@ export default function HomePage() {
         <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-[var(--color-dark)]">
           {/* Background image */}
           <div className="absolute inset-0 opacity-30">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1600&q=80"
               alt="Hero furniture"
               fill
               className="object-cover"
-              priority
+              preload
             />
           </div>
 
           {/* Decorative line */}
-          <div className="absolute left-0 top-0 h-full w-1 bg-[var(--color-accent)] opacity-60" />
-
-          <div className="relative max-w-7xl mx-auto px-8 py-24 md:px-12 lg:px-16">
+          <div className="absolute left-0 top-0 h-full w-[3px] bg-[var(--color-accent)] shadow-[0_0_20px_var(--color-accent)] opacity-70 z-10" />
+          <div className="relative max-w-7xl px-8 py-24 md:px-12 lg:px-16">
             <p className="text-sm tracking-[0.3em] uppercase text-[var(--color-accent-light)] mb-6 animate-fade-up">
-              Koleksi Terbaru 2025
+              Koleksi Terbaru 2026
             </p>
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight max-w-3xl mb-8 animate-fade-up delay-100">
               Furniture untuk

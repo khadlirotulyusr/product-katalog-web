@@ -17,13 +17,13 @@ export default function Footer() {
 
         {/* Kategori */}
         <div>
-          <h4 className="text-sm font-semibold tracking-widest uppercase text-[var(--color-accent-light)] mb-4">Kategori</h4>
+          <h4 className="text-sm font-semibold tracking-widest uppercase text-[var(--color-accent-light)] mb-4">Produk</h4>
           <ul className="space-y-2">
             {categories.map((cat) => (
               <li key={cat.slug}>
                 <Link
                   href={`/kategori/${cat.slug}`}
-                  className="text-sm text-[var(--color-warm)] hover:text-[var(--color-accent-light)] transition-colors flex items-center gap-2"
+                  className="text-sm text-[var(--color-warm)] hover:text-[var(--color-accent-light)] hover:underline transition-colors flex items-center gap-2"
                 >
                   <span>{cat.icon}</span> {cat.name}
                 </Link>
@@ -42,15 +42,15 @@ export default function Footer() {
             <li>✉️ halo@furnico.id</li>
           </ul>
           <div className="flex gap-4 mt-6">
-            <a href="#" className="text-[var(--color-warm)] hover:text-[var(--color-accent-light)] transition-colors text-sm">Instagram</a>
-            <a href="#" className="text-[var(--color-warm)] hover:text-[var(--color-accent-light)] transition-colors text-sm">Facebook</a>
-            <a href="#" className="text-[var(--color-warm)] hover:text-[var(--color-accent-light)] transition-colors text-sm">TikTok</a>
+            <a href="#" className="text-[var(--color-warm)] hover:text-[var(--color-accent-light)] hover:underline transition-colors text-sm">Instagram</a>
+            <a href="#" className="text-[var(--color-warm)] hover:text-[var(--color-accent-light)] hover:underline transition-colors text-sm">Facebook</a>
+            <a href="#" className="text-[var(--color-warm)] hover:text-[var(--color-accent-light)] hover:underline transition-colors text-sm">TikTok</a>
           </div>
         </div>
       </div>
 
       <div className="border-t border-[var(--color-muted)] max-w-7xl mx-auto px-8 py-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-xs text-[var(--color-muted)]">© 2025 Furnico. All rights reserved.</p>
+        <p className="text-xs text-[var(--color-muted)]">© 2026 Furnico. All rights reserved.</p>
         <p className="text-xs text-[var(--color-muted)]">Dibuat dengan ❤️ di Jakarta</p>
       </div>
     </footer>

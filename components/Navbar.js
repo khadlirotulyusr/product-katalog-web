@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[var(--color-cream)] border-b border-[var(--color-warm)]">
-      <div className="max-w-7xl mx-auto px-8 py-4 md:px-12 lg:px-16 flex items-center justify-between">
+      <div className="max-w-7xl py-3 mx-auto px-8 md:px-12 lg:px-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl font-bold font-[family-name:var(--font-playfair)] text-[var(--color-dark)] tracking-tight">
@@ -19,10 +19,10 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-10 py-0">
+        <div className="hidden md:flex items-center gap-8 py-0">
           <Link
             href="/"
-            className={`text-sm px-5 py-2.5 rounded-lg transition-colors ${
+            className={`text-sm px-4 py-2 rounded-lg transition-colors ${
               pathname === "/"
                 ? "text-[var(--color-accent)] font-medium bg-[var(--color-warm)]"
                 : "text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-warm)]"
@@ -36,7 +36,7 @@ export default function Navbar() {
               <Link
                 key={cat.slug}
                 href={`/kategori/${cat.slug}`}
-                className={`text-sm px-5 py-2.5 my-4 rounded-lg transition-colors ${
+                className={`text-sm px-4 py-2 rounded-lg transition-colors ${
                   isActive
                     ? "text-[var(--color-accent)] font-medium bg-[var(--color-warm)]"
                     : "text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-warm)]"

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SafeImage from "./SafeImage";
 
 export default function ProductCard({ product, index = 0 }) {
   return (
@@ -10,7 +10,7 @@ export default function ProductCard({ product, index = 0 }) {
     >
       {/* Image */}
       <div className="relative overflow-hidden aspect-[4/3] bg-[var(--color-warm)]">
-        <Image
+        <SafeImage
           src={product.image}
           alt={product.name}
           fill
